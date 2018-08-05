@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>selecting elements</title>
+
+</head>
+
+<body>
+	<h1>Some Text</h1>
+
+<!-- querySelector is the modern way to select elements in native js -->
+<!--
+	querySelectorAll('div');
+	querySelector('#whatever');
+
+	var div = document.createElement('div');
+-->
+	<div id="different">THis is different</div>
+	<div id="one">this is one</div>
+	<div id="two">this is two</div>
+
+	<script type="text/javascript">
+		document.body.getElementsByTagName('h1')[0].style.color='red';
+		var different = document.querySelector('#different');
+		different.style.color = 'green';
+		var allDivs = document.querySelectorAll('div');
+		// for(var i=0; i<allDivs.length; i++){
+		// 	allDivs[i].style.fontFamily = 'helvetica';
+		// }
+	</script>
+</body>
+
+</html>
